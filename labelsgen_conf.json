@@ -1,0 +1,24 @@
+{
+  "page": "Multipurpose Labels",
+  "qr_url_prefix": "https://km3netdbweb.in2p3.fr/product/",
+  "qr_url_product_prefix": "3.4/WWRS/4.",
+  "sequence_labels": "sequence_labels.pdf",
+  "file_labels": "file_labels.pdf",
+  "schema_labels": "schema_labels.pdf",
+  "qr_size": 0.78,
+  "text_left_x": 0.12,
+  "text_right_x": 0.92,
+  "text_bottom_y": 0.06,
+  "font": "Helvetica",
+  "font_size": 6,
+  "pages": [
+    { "name": "Multipurpose Labels",
+      "width": 1.0,
+      "height": 1.0
+    },
+    { "name": "24x48 labels",
+      "width": 1.0,
+      "height": 2.0
+    }
+  ]
+}

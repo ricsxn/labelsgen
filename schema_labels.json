@@ -1,0 +1,126 @@
+{
+        "page": "Multipurpose Labels",
+        "pages": [{
+                "producer_serial": {
+                        "type": "label",
+                        "font": "Helvetica",
+                        "font_size": 10,
+                        "text": "Product XYZ",
+                        "x": 0.50,
+                        "y": 0.70
+                },
+                "project": {
+                        "type": "label",
+                        "font": "Helvetica",
+                        "font_size": 10,
+                        "text": "Project",
+                        "x": 0.50,
+                        "y": 0.44
+                },
+                "insitution": {
+                        "type": "label",
+                        "font": "Helvetica",
+                        "font_size": 10,
+                        "text": "Company",
+                        "x": 0.50,
+                        "y": 0.15
+                }
+        },
+        {
+                "product_info": {
+                        "type": "label",
+                        "font": "Helvetica",
+                        "font_size": 6,
+                        "text": "Product/3.53",
+                        "x": 0.50,
+                        "y": 0.10
+                },
+                "product_serial": {
+                        "type": "label",
+                        "font": "Helvetica",
+                        "font_size": 6,
+                        "text": "53",
+                        "x": 0.12,
+                        "y": 0.50,
+                        "rotation": 90
+                },
+                "product_producer_serial": {
+                        "type": "label",
+                        "font": "Helvetica",
+                        "font_size": 6,
+                        "text": "Product/3",
+                        "x": 0.94,
+                        "y": 0.50,
+                        "rotation": 90
+                },
+                "product_qr": {
+                        "type": "qr",
+                        "qr_size": 0.70,
+                        "text": "https://<mysite>/products/3.53",
+                        "x": 0.50,
+                        "y": 0.55
+                }
+        },
+        {
+                "project_logo": {
+                        "type": "image",
+                        "path": "images/project_logo.png",
+                        "width": 0.3,
+                        "height": 0.3,
+                        "x": 0.50,
+                        "y": 0.75
+                },
+                "producer_serial": {
+                                "type": "label",
+                                "font": "Helvetica",
+                                "font_size": 10,
+                                "text": "Product/3",
+                                "x": 0.50,
+                                "y": 0.43
+                },
+                "company_logo": {
+                        "type": "image",
+                        "path": "images/company_logo.png",
+                        "width": 0.3,
+                        "height": 0.3,
+                        "x": 0.50,
+                        "y": 0.20
+                }
+        },
+        {
+                "product_code": {
+                                "type": "label",
+                                "font": "Helvetica",
+                                "font_size": 6,
+                                "text": "4.7.6/ACTIVE/3.XX",
+                                "x": 0.50,
+                                "y": 0.08
+                },
+                "product_serial": {
+                                "type": "label",
+                                "font": "Helvetica",
+                                "font_size": 6,
+                                "text": "3.XX",
+                                "x": 0.12,
+                                "y": 0.50,
+                                "rotation": 90
+                },
+                "producer_serial": {
+                                "type": "label",
+                                "font": "Helvetica",
+                                "font_size": 6,
+                                "text": "XX",
+                                "x": 0.94,
+                                "y": 0.50,
+                                "rotation": 90
+                },
+                "product_qr": {
+                                "type": "qr",
+                                "qr_size": 0.68,
+                                "text": "https://<mysite>/products/3.XX",
+                                "x": 0.50,
+                                "y": 0.52
+                }
+        }
+        ]
+}
