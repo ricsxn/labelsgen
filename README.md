@@ -151,7 +151,7 @@ This utility creates a PDF file containing label pages including products QR cod
 All different execution modes can be specified in a single command line:
 
 ```bash
-labelsgen -f upi_file.txt -s page_schema.json 2000 5 -v
+labelsgen -f file_labels.txt -s schema_labels.json 2000 5 -v
 ```
 
 
