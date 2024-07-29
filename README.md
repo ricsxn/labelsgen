@@ -1,7 +1,15 @@
 # LabelsGen
 Utility to generate labels that include QR codes for generic products
 
-If you find this tool useful, please [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/gbraad)
+Below few examples:
+
+|Sequence|File|Schema|
+|---|---|---|
+|![product_sequence](images/examples/sequence_labels.png)|![products_file](images/examples/file_labels.png)|![schema_file](images/examples/schema_labels.png)|
+
+Examples above refers to 1x1inch pages, used for Dymo labelwrites printers. The page size can be configured.
+
+If you find this tool useful, please [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/ricsxn)
 
 ## Setup
 Before proceeding with the setup, ensure that the following prerequisites are satisfied by your system:
