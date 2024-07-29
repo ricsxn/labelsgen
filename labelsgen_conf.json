@@ -1,7 +1,7 @@
 {
   "page": "Multipurpose Labels",
-  "qr_url_prefix": "https://km3netdbweb.in2p3.fr/product/",
-  "qr_url_product_prefix": "3.4/WWRS/4.",
+  "qr_url_prefix": "https://<mycompany>/product/",
+  "qr_url_product_prefix": "<product>/4.",
   "sequence_labels": "sequence_labels.pdf",
   "file_labels": "file_labels.pdf",
   "schema_labels": "schema_labels.pdf",

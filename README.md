@@ -110,15 +110,16 @@ This utility creates a PDF file with labels that include QR codes for DOMs or ge
   To specify a label (a texutal element), specify the object:
 
   ```json
-   {
-      "type": "label",
-      "font": "Helvetica",
-      "font_size": 10,
-      "text": "INFN-CT",
-      "x": 0.50,
-      "y": 0.15
-      ["rotation": 90]
-   }
+  "product_code": {
+                   "type": "label",
+                   "font": "Helvetica",
+                   "font_size": 6,
+                   "text": "4.7.6/ACTIVE/3.XX",
+                   "x": 0.50,
+                   "y": 0.08[,
+                   "rotation": 90
+                   ]
+  },
    ```
    The `rotation` property is not mandatory.
 
@@ -127,63 +128,66 @@ This utility creates a PDF file with labels that include QR codes for DOMs or ge
    This type represent the given `text` into a QR code image having specified position and size.
 
   ```json
-   "bp18tek08_qr": {
-      "type": "qr",
-      "qr_size": 0.70,
-      "text": "https://km3netdbweb.in2p3.fr/product/4.7.6/ACTIVE/3.47",
-      "x": 0.50,
-      "y": 0.55
-   }
-   ```
+  "product_qr": {
+                  "type": "qr",
+                  "qr_size": 0.68,
+                  "text": "https://<mysite>/products/3.XX",
+                  "x": 0.50,
+                  "y": 0.52
+  }
+  ```
 
    ### image
 
   ```json
-  "infn_logo": {
-      "type": "image",
-      "path": "images/INFN_CT_Logo.jpg",
-      "width": 0.7,
-      "height": 0.7,
-      "x": 0.50,
-      "y": 0.20
-	}
-   ```
+ "company_logo": {
+          "type": "image",
+          "path": "images/company_logo.png",
+          "width": 0.3,
+          "height": 0.3,
+          "x": 0.50,
+          "y": 0.20
+  }
+  ```
 
 All different execution modes can be specified in a single command line:
 
 ```bash
-domqrgen -f upi_file.txt -s page_schema.json 2000 5 -v
+labelsgen -f upi_file.txt -s page_schema.json 2000 5 -v
 ```
 
 
 ## Configuration
-The `domqrgen` command can be configured changing the configuration file `domqrgen_conf.json`.
+The `labelsgen` command can be configured changing the configuration file `labelsgen_conf.json`.
 Below the default settings:
 
 ```json
 {
   "page": "Multipurpose Labels",
-  "dom_upi_url_prefix": "https://km3netdbweb.in2p3.fr/product/",
-  "dom_upi_prefix": "3.4/WWRS/",
-  "dom_location_number": 4,
-  "dom_labels": "dom_labels.pdf",
-  "upi_labels": "upi_labels.pdf",
+  "qr_url_prefix": "https://<mycompany>/product/",
+  "qr_url_product_prefix": "<product>/4.",
+  "sequence_labels": "sequence_labels.pdf",
+  "file_labels": "file_labels.pdf",
   "schema_labels": "schema_labels.pdf",
   "qr_size": 0.78,
   "text_left_x": 0.12,
+  "text_right_x": 0.92,
   "text_bottom_y": 0.06,
   "font": "Helvetica",
   "font_size": 6,
-  "text_right_x": 0.92,
   "pages": [
     { "name": "Multipurpose Labels",
       "width": 1.0,
       "height": 1.0
+    },
+    { "name": "24x48 labels",
+      "width": 1.0,
+      "height": 2.0
     }
   ]
 }
 ```
 
-Configuration options are self explanatory and they principally affect the DOM QR generation in sequence and using the configuration file.
+Configuration options are self explanatory and they principally affect the  QR generation in sequence and using the configuration file.
 The `pages` array and `page` define the page size.
 The `*_labels.pdf` are the PDF file names produced using numeric sequence, input file or schema
