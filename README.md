@@ -119,14 +119,14 @@ This utility creates a PDF file containing label pages including products QR cod
 
   ```json
   "product_code": {
-                   "type": "label",
-                   "font": "Helvetica",
-                   "font_size": 6,
-                   "text": "4.7.6/ACTIVE/3.XX",
-                   "x": 0.50,
-                   "y": 0.08[,
-                   "rotation": 90
-                   ]
+    "type": "label",
+    "font": "Helvetica",
+    "font_size": 6,
+    "text": "4.7.6/ACTIVE/3.XX",
+    "x": 0.50,
+    "y": 0.08[,
+    "rotation": 90
+    ]
   },
    ```
    The `rotation` property is not mandatory.
@@ -137,11 +137,11 @@ This utility creates a PDF file containing label pages including products QR cod
 
   ```json
   "product_qr": {
-                  "type": "qr",
-                  "qr_size": 0.68,
-                  "text": "https://<mysite>/products/3.XX",
-                  "x": 0.50,
-                  "y": 0.52
+    "type": "qr",
+    "qr_size": 0.68,
+    "text": "https://<mysite>/products/3.XX",
+    "x": 0.50,
+    "y": 0.52
   }
   ```
 
@@ -149,12 +149,12 @@ This utility creates a PDF file containing label pages including products QR cod
 
   ```json
   "company_logo": {
-          "type": "image",
-          "path": "images/company_logo.png",
-          "width": 0.3,
-          "height": 0.3,
-          "x": 0.50,
-          "y": 0.20
+    "type": "image",
+    "path": "images/company_logo.png",
+    "width": 0.3,
+    "height": 0.3,
+    "x": 0.50,
+    "y": 0.20
   }
   ```
 
