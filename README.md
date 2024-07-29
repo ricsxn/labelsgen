@@ -114,7 +114,7 @@ This utility creates a PDF file containing label pages including products QR cod
   
   The schema supports the following element types:
 
-  ### Label
+  ### label
   To specify a label (a texutal element), specify the object:
 
   ```json
