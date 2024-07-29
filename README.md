@@ -138,7 +138,7 @@ This utility creates a PDF file containing label pages including products QR cod
    ### image
 
   ```json
- "company_logo": {
+  "company_logo": {
           "type": "image",
           "path": "images/company_logo.png",
           "width": 0.3,
