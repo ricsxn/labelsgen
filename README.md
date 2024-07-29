@@ -1,6 +1,8 @@
 # LabelsGen
 Utility to generate labels that include QR codes for generic products
 
+If you find this tool useful, please [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/gbraad)
+
 ## Setup
 Before proceeding with the setup, ensure that the following prerequisites are satisfied by your system:
 
