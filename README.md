@@ -1,5 +1,5 @@
 # LabelsGen
-Utility to generate labels that include QR codes for DOMs or generic products
+Utility to generate labels that include QR codes for generic products
 
 ## Setup
 Before proceeding with the setup, ensure that the following prerequisites are satisfied by your system:
@@ -28,11 +28,11 @@ To check the presence of the virtualenv, just execute `python3 -m venv`, it soul
 pip install virtualenv
 ```
 
-### `domqrgen` command installation
-To install 'domqrgen' command, just execute the commands below:
+### `labelsgen` command installation
+To install 'labelsgen' command, just execute the commands below:
 
    ```bash
-   cd <domqrgen path>
+   cd <labelsgen path>
    python3 -venv venv
    . venv/bin/activate
    pip install .
@@ -40,49 +40,47 @@ To install 'domqrgen' command, just execute the commands below:
 
 ## Usage
 
-The `domqrgen` command foresees different options, as reported by its usage instructions:
+The `labelsgen` command foresees different options, as reported by its usage instructions:
 
 ```bash
-$ domqrgen 
-This utility creates a PDF file with labels that include QR codes for DOMs or generic products.
-
-    Usage: domqrgen <first_dom_number> [number_of_doms=1]
+$ labelsgen 
+This utility creates a PDF file containing label pages including products QR codes 
+    Usage: labelsgen <first_product_number> [number_of_products=1]
                  -v
-                 -f <upi_file>
-                 -s <schema_file>
+                 -f <file_labels>
+                 -s <schema_labels>
                  -h|--help show this page
 
     Where:
       -v open the generated QR labels file
-      'upi_file' is a text file containing a single UPI for each line and optionally
-      the producer serial number
-      'schema_file' file containing the description of the page to generate
+      'file_labels' is a text file containing a single product data and optionally a text placed on the right side
+      'schema_labels' file containing the description of the labels to generate
 
-    The utility can be configured changing the 'domqrgen_conf.json' file
+    The utility can be configured changing the 'labelsgen_conf.json' file
 ```
 
-* Generate a sequence of DOM UPIs providing the first DOM serial number and the number of successive DOMs
+* Generate a sequence of labels containing QE codes of products providing the first serial number and the number of successive products
 
   ```bash
-  domqrgen <first_dom_number> [number_of_doms=1]
+  labelsgen <first_product_number> [number_of_products=1]
   ```
 
 * Generate QRs specified into an input file
 
   ```bash
-  domqrgen -f <upi_file.txt>
+  labelsgen -f <file_labels>
   ```
 
-  where `<upi_file>` contains UPI line records in the format: 
+  where `<file_labels>` contains UPI line records in the format: 
 
   ```bash
-  <UPI> [<producer serial>]
+  <product url> [<product serial>]
   ```
 
 * Generate a custom page providing a shema file
 
   ```bash
-  domqrgen -s <schema_file.txt>
+  labelsgen -s <schema_labels>
   ```
 
   The schema file consists of a json file containing instrucitons to generate cusstom pages. To see how to configure the page, see the chapter [Page schema composition]()
